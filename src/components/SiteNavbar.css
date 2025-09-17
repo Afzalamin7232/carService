@@ -1,0 +1,82 @@
+/* Base navbar */
+.custom-navbar {
+  padding: 0.6rem 1rem;
+}
+
+/* Brand text */
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black !important;
+}
+
+/* Links */
+.nav-link-hover {
+  color: black;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.nav-link-hover:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Contact Us button */
+.contact-link {
+  color: #28a745 !important;
+  font-weight: 600;
+  border: 2px solid #28a745;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: #28a745;
+  color: white !important;
+}
+
+/* Language button */
+.lang-btn {
+  font-size: 0.85rem;
+  padding: 4px 10px;
+}
+
+/* Custom toggler */
+.custom-toggler {
+  border: none !important;
+  font-size: 1rem;
+}
+
+/* ---------------- Mobile Adjustments ---------------- */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 0.4rem 0.8rem; /* smaller navbar */
+  }
+
+  .brand-text {
+    font-size: 1rem; /* smaller logo */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links .nav-link,
+  .nav-links .contact-link {
+    width: 100%;
+    text-align: left;
+    margin: 4px 0;
+  }
+
+  .lang-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+}

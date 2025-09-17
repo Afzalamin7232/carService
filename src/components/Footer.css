@@ -1,0 +1,48 @@
+.custom-footer {
+  font-size: 14px; /* Smaller text for overall footer */
+  line-height: 1.5;
+}
+
+.footer-section {
+  padding: 5px;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.footer-text {
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.footer-links li {
+  margin: 4px 0;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .custom-footer {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .footer-title {
+    font-size: 14px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-links li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+}

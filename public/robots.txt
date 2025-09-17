@@ -1,3 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
+# Robots.txt for Car Services Website
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap (update this after hosting with your real domain)
+Sitemap: http://localhost:3000/sitemap.xml
