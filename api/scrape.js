@@ -4,7 +4,7 @@ const puppeteer = require("puppeteer-core");
 module.exports = async (req, res) => {
   let browser = null;
   try {
-    const executablePath = (await chromium.executablePath) || puppeteer.executablePath();
+    const executablePath = await chromium.executablePath;
 
     browser = await puppeteer.launch({
       args: chromium.args,
@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
     console.error("Scrape error:", err);
     res.status(500).json({ error: err.message });
   } finally {
-    if (browser) {
+    if (browser !== null) {
       await browser.close();
     }
   }
